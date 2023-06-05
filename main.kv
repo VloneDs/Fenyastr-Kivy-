@@ -1,0 +1,51 @@
+<MainWidget>:
+    orientation: 'vertical'
+    padding: 0
+    spacing: 10
+    oplata_label: DA
+    name_input: name
+
+    Image:
+        source: 'СТРЕЛКА.PNG'
+
+    TextInput:
+        id: name
+        multiline: False
+        size_hint: (.5, None)
+        pos_hint:{"center_x": 0.5, "top": 1}
+        height: 50
+        font_size: 30
+    
+    Label: 
+        id: DA
+        font_size: 30
+        text: 'Какая услуга от Фенястра вам нужна? '
+    
+    Button:
+        font_size: 30
+        text: 'Оплатить'
+        size_hint: (1, None)
+        pos_size:{"center_x": 0.5, "top" : 1}
+
+        on_press: root.oplata()
+
+        
+    # Label:
+    #     markup: True
+    #     text: 'Hello мир'
+    #     canvas.before:
+    #         Color:
+    #             rgba: 0, 0, 0, 1
+    #         Rectangle:
+    #             pos: self.pos
+    #             size: self.size
+
+    # Label:
+    #     markup: True
+    #     text: 'Mанера крутит мир'
+    #     canvas.before:
+    #         Color:
+    #             rgba: 161, 35, 0, 0.8
+    #         Rectangle:
+    #             pos: self.pos
+    #             size: self.size
