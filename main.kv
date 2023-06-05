@@ -6,6 +6,7 @@
     name_input: name
 
     Image:
+        id: my_image
         source: 'СТРЕЛКА.PNG'
 
     TextInput:
@@ -28,6 +29,7 @@
         pos_size:{"center_x": 0.5, "top" : 1}
 
         on_press: root.oplata()
+        on_release: root.change_image()
 
         
     # Label:
